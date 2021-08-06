@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Controlling CSS3 Effects</title>
+  <style>
+    #div1 {
+      width: 600px;
+      height: 350px;
+      background-color: pink;
+    }
+
+    #div2 {
+      background-color: orange;
+      width: 80px;
+      height: 80px;
+      padding: 20px;
+      position: relative;
+      left: 240px;
+      top: 105px;
+    }
+  </style>
+  <script>
+    window.onload = function() {
+        document.getElementById('btn1').onclick = function() {
+          document.getElementById('div1').style.background =
+            'radial-gradient( yellow, #green)';
+          document.getElementById('div2').style.boxShadow =
+            '10px 10px 10px black';
+        };
+        document.getElementById('btn2').onclick = function() {
+          document.getElementById('div1').style.background =
+            'radial-gradient(yellow, #green)';
+          document.getElementById('div2').style.boxShadow =
+            '10px 10px 10px black';
+        };
+        document.getElementById('btn3').onclick = function() {
+          document.getElementById('div1').style.background =
+            'radial-gradient(yellow, #green)';
+          document.getElementById('div2').style.boxShadow =
+            '10px 10px 10px black';
+        };
+      };
+  </script>
+</head>
+
+<body>
+  <div id="div1">
+    <div id="div2">
+      LIGHTS:<br />
+      <input type="button" id="btn1" value="Top left" /><br />
+      <input type="button" id="btn2" value="Top Right" /><br />
+      <input type="button" id="btn3" value="Bottom" />
+    </div>
+  </div>
+</body>
+
+</html>
